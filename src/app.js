@@ -1,6 +1,5 @@
 export class App {
-  constructor(statBlock) {
-    this.statBlock = statBlock;
+  constructor() {
     this.message = 'Hello World!';
     this.itemArray = [];
   }

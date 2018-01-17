@@ -4,6 +4,10 @@
   <h1>${message}</h1>
   <button class="btn btn-primary" click.delegate="newItem()">Add New</button>
   <div repeat.for="item of itemArray">
-    <stat-block stat-data.bind="item"></stat-block>
+    <div class="row">
+      <div class="col-sm-12">
+          <stat-block stat-data.bind="item"></stat-block>
+      </div>
+    </div>
   </div>
 </template>
