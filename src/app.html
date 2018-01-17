@@ -1,3 +1,9 @@
 <template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="components/statBlock/statBlock"></require>
   <h1>${message}</h1>
+  <button class="btn btn-primary" click.delegate="newItem()">Add New</button>
+  <div repeat.for="item of itemArray">
+    <stat-block stat-data.bind="item"></stat-block>
+  </div>
 </template>
