@@ -29,7 +29,10 @@
     "id": "none",
     "displayName": "None",
     "fileExtension": ".css",
-    "source": "src/**/*.css"
+    "source": "src/**/*.css",
+    "sassSource": "styles/**/*.scss",
+    "sourcemapsSource": "styles/**/*.css",
+    "concatCssDest": "styles/styles.min.css"
   },
   "editor": {
     "id": "vscode",
@@ -134,8 +137,28 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name":"jquery",
+            "path":"../node_modules/jquery/dist",
+            "main":"jquery.min",
+            "exports": "$"
+          },
+          {
+              "name": "bootstrap",
+              "path": "../node_modules/bootstrap/dist",
+              "main": "js/bootstrap.min",
+              "deps": ["jquery"],
+              "resources": [
+                "css/bootstrap.css"
+              ]
           }
-        ]
+        ],
+        "copyFiles": {
+          "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2": "bootstrap/fonts",
+          "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff": "bootstrap/fonts",
+          "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf": "bootstrap/fonts"
+        }
       }
     ]
   }

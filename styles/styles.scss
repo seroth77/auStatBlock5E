@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+stat-block {
+  /* A bit of margin for presentation purposes, to show off the drop
+  shadow. */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+svg {
+  fill: #922610;
+  /* Stroke is necessary for good antialiasing in Chrome. */
+  stroke: #922610;
+  margin-top: 0.6em;
+  margin-bottom: 0.35em;
+}
