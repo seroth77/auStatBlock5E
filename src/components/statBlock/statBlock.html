@@ -1,16 +1,21 @@
 <template>
-  <!-- <require from="bootstrap/css/bootstrap.css"></require> -->
   <require from="components/headingBlock/headingBlock"></require>
+  <require from="components/abilitiesBlock/abilitiesBlock"></require>
 
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
         Tyep goes here
+        <div click.delegate="editInfo($event)" class="edit-btn">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </div>
       </div>
-      <div class="panel-body">
+      <div class="panel-body">        
         <div class="bar"></div>
         <div class="content-wrapper">
           <heading-block></heading-block>
+
+          <abilities-block></abilities-block>
         </div>
         <div class="bar"></div>
       </div>

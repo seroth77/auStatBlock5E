@@ -36,9 +36,6 @@ svg {
   margin-left: 2px;
   margin-right: 2px;
   /* This is possibly overriden by next CSS rule. */
-  -webkit-columns: 400px;
-  -moz-columns: 400px;
-  columns: 400px;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -46,3 +43,37 @@ svg {
   -webkit-column-fill: auto;
   -moz-column-fill: auto;
   column-fill: auto; }
+
+.panel-heading .edit-btn {
+  float: right;
+  font-size: 150%;
+  margin-top: -4px;
+  cursor: pointer; }
+
+.panel-body h1 {
+  font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+  color: #7A200D;
+  font-weight: 700;
+  margin: 0px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-variant: small-caps; }
+
+.panel-body h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
+  margin: 0; }
+
+.panel-body .stat-set {
+  float: left;
+  padding-left: 14px;
+  padding-right: 14px; }
+  .panel-body .stat-set .stat-key {
+    color: #7A200D;
+    padding-bottom: 4px;
+    text-align: center; }
+    .panel-body .stat-set .stat-key h4 {
+      font-weight: bold;
+      font-size: 13.5px;
+      margin: 0; }

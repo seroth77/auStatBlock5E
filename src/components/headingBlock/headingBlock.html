@@ -1,3 +1,15 @@
 <template>
-  HEADING BLOCK
+  <require from="components/taperedRule/taperedRule"></require>
+
+  <div show.bind="!isEdit">
+    <h1>${title}</h1>
+    <h2>${description}</h2>
+  </div>
+
+  <div show.bind="isEdit">
+    <input type="text" value="${title}" />
+    <input type="text" value="${description}" placeholder="">
+  </div>
+
+  <tapered-rule></tapered-rule>
 </template>
