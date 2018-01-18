@@ -4,12 +4,12 @@ export class AbilitiesBlock {
   constructor() {
     this.test = 'dfsffs';
     this.obj = {
-      STR: 15,
-      DEX: 14,
+      STR: 14,
+      DEX: 11,
       CON: 13,
-      INT: 12,
-      WIS: 10,
-      CHA: 8
+      INT: 1,
+      WIS: 3,
+      CHA: 1
     };
     this.stats = this.findModifier(this.obj);
   }
@@ -27,7 +27,7 @@ export class AbilitiesBlock {
 
   modifierSearch(value) {
     let sign = '';
-    let modArray = [0, 1, 4, 4, 3, 3, 2, 2, 1, 1, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10];
+    let modArray = [0, 5, 4, 4, 3, 3, 2, 2, 1, 1, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10];
     sign = (value < 10) ? '-' : '+';
     return ' (' + sign + modArray[value] + ')';
   }

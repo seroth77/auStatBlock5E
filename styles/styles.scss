@@ -93,9 +93,9 @@ svg {
     float: left;
     padding-left: 14px;
     padding-right: 14px;
+    color: #7A200D;
 
     .stat-key {
-      color: #7A200D;
       padding-bottom: 4px;
       text-align: center;
 
@@ -104,6 +104,17 @@ svg {
         font-size: 13.5px;
         margin: 0;
       }
+    }
+  }
+
+  .vitals {
+    color: #7A200D;
+    
+    h4 {
+      font-weight: bold;
+      font-size: 13.5px;
+      margin: 0;
+      display: inline;
     }
   }
 }

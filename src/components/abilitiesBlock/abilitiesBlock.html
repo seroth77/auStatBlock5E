@@ -1,5 +1,7 @@
 <template>
   <require from="resources/value-converters/objectkeys"></require>
+  <require from="components/taperedRule/taperedRule"></require>
+
   <div class="row">
     <div class="col-sm-6">
       <div class="stat-set" repeat.for="stat of stats | objectKeys">
@@ -8,4 +10,6 @@
       </div>
     </div>
   </div>
+
+  <tapered-rule></tapered-rule>
 </template>

@@ -68,12 +68,20 @@ svg {
 .panel-body .stat-set {
   float: left;
   padding-left: 14px;
-  padding-right: 14px; }
+  padding-right: 14px;
+  color: #7A200D; }
   .panel-body .stat-set .stat-key {
-    color: #7A200D;
     padding-bottom: 4px;
     text-align: center; }
     .panel-body .stat-set .stat-key h4 {
       font-weight: bold;
       font-size: 13.5px;
       margin: 0; }
+
+.panel-body .vitals {
+  color: #7A200D; }
+  .panel-body .vitals h4 {
+    font-weight: bold;
+    font-size: 13.5px;
+    margin: 0;
+    display: inline; }

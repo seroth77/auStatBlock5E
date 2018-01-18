@@ -1,0 +1,20 @@
+<template>
+  <require from="components/taperedRule/taperedRule"></require>
+
+  <div class="vitals">
+    <h4>Armor Type</h4>
+    <span> ${vitals.AC} ${vitals.ACType}</span>
+  </div>
+
+  <div class="vitals">
+    <h4>Hit Points</h4>
+    <span> ${vitals.HP} ${vitals.HPDice}</span>
+  </div>
+
+  <div class="vitals">
+    <h4>Speed</h4>
+    <span> ${vitals.Speed}</span>
+  </div>
+
+  <tapered-rule></tapered-rule>
+</template>
